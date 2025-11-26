@@ -22,7 +22,9 @@
 #include <stdlib.h>
 #include <inttypes.h>
 #include <string.h>
+#ifndef _WIN32
 #include <strings.h>
+#endif
 #include <math.h>
 #include <float.h>
 #include <libmeshb7.h>
