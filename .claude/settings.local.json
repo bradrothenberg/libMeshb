@@ -20,7 +20,18 @@
       "Bash(\"c:/cplusplus/ntop/libMeshb/build/utilities/Release/stl2mesh.exe\")",
       "Bash(\"c:/cplusplus/ntop/libMeshb/build/utilities/Release/stl2mesh.exe\" \"c:/cplusplus/ntop/libMeshb/sample_meshes/test_cube.stl\")",
       "Bash(\"c:/cplusplus/ntop/libMeshb/build/utilities/Release/mshinfo.exe\":*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(\"/c/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/MSBuild.exe\" utilities/bdf2mesh.vcxproj -p:Configuration=Release -p:Platform=x64)",
+      "Bash(\"/c/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/MSBuild.exe\" libMeshb.sln -p:Configuration=Release -p:Platform=x64 -t:ZERO_CHECK)",
+      "Bash(\"c:/cplusplus/ntop/libMeshb/build/utilities/Release/bdf2mesh.exe\")",
+      "Bash(\"c:/cplusplus/ntop/libMeshb/build/utilities/Release/bdf2mesh.exe\":*)",
+      "Bash(\"/c/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/MSBuild.exe\" utilities/mesh2stl.vcxproj -p:Configuration=Release -p:Platform=x64)",
+      "Bash(\"/c/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/MSBuild.exe\" utilities/mesh2bdf.vcxproj -p:Configuration=Release -p:Platform=x64)",
+      "Bash(\"c:/cplusplus/ntop/libMeshb/build/utilities/Release/mesh2stl.exe\")",
+      "Bash(\"c:/cplusplus/ntop/libMeshb/build/utilities/Release/mesh2bdf.exe\")",
+      "Bash(\"c:/cplusplus/ntop/libMeshb/build/utilities/Release/mesh2stl.exe\" \"c:/cplusplus/ntop/libMeshb/sample_meshes/test_cube.meshb\")",
+      "Bash(\"c:/cplusplus/ntop/libMeshb/build/utilities/Release/mesh2bdf.exe\" \"c:/cplusplus/ntop/libMeshb/sample_meshes/SphereCube.meshb\" \"c:/cplusplus/ntop/libMeshb/sample_meshes/SphereCube_roundtrip.bdf\")",
+      "Bash(\"c:/cplusplus/ntop/libMeshb/build/utilities/Release/mesh2stl.exe\" \"c:/cplusplus/ntop/libMeshb/sample_meshes/quad.meshb\" -ascii)"
     ],
     "deny": [],
     "ask": []
