@@ -24,5 +24,9 @@ add_executable(stl2mesh stl2mesh.c)
 target_link_libraries (stl2mesh Meshb.7 ${AIO_LIBRARIES})
 install (TARGETS stl2mesh DESTINATION bin COMPONENT applications)
 
+add_executable(bdf2mesh bdf2mesh.c)
+target_link_libraries (bdf2mesh Meshb.7 ${AIO_LIBRARIES})
+install (TARGETS bdf2mesh DESTINATION bin COMPONENT applications)
+
 install (FILES libmeshb7_helpers.c DESTINATION helpers COMPONENT sources)
 install (FILES libmeshb7_helpers.h DESTINATION include COMPONENT headers)
