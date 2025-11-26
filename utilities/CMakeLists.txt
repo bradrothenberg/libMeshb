@@ -20,5 +20,9 @@ add_executable(ugrid2mesh ugrid2mesh.c)
 target_link_libraries (ugrid2mesh Meshb.7 ${AIO_LIBRARIES})
 install (TARGETS ugrid2mesh DESTINATION bin COMPONENT applications)
 
+add_executable(stl2mesh stl2mesh.c)
+target_link_libraries (stl2mesh Meshb.7 ${AIO_LIBRARIES})
+install (TARGETS stl2mesh DESTINATION bin COMPONENT applications)
+
 install (FILES libmeshb7_helpers.c DESTINATION helpers COMPONENT sources)
 install (FILES libmeshb7_helpers.h DESTINATION include COMPONENT headers)
