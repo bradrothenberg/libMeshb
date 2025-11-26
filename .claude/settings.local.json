@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cmake --build:*)",
+      "Bash(cmd.exe /c \"cd /d c:\\cplusplus\\ntop\\libMeshb\\build && cmake --build . --config Release\")",
+      "Bash(cmd.exe /c \"where cmake\")",
+      "Bash(cmd.exe /c \"cmake --version\")",
+      "Bash(cmd.exe /c \"where msbuild\")",
+      "Bash(cmd.exe /c \"dir \"\"C:\\Program Files\\Microsoft Visual Studio\\*\"\" /s /b 2>nul | findstr /i msbuild.exe | head -5\")",
+      "Bash(cmd.exe /c:*)",
+      "Bash(powershell.exe:*)",
+      "Bash(gcc:*)",
+      "Bash(\"/c/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/MSBuild.exe\" \"c:/cplusplus/ntop/libMeshb/build/libMeshb.sln\" /p:Configuration=Release /p:Platform=x64)",
+      "Bash(\"/c/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/MSBuild.exe\" libMeshb.sln -p:Configuration=Release -p:Platform=x64)",
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(cat:*)",
+      "Bash(\"/c/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/MSBuild.exe\" utilities/stl2mesh.vcxproj -p:Configuration=Release -p:Platform=x64)",
+      "Bash(\"c:/cplusplus/ntop/libMeshb/build/utilities/Release/stl2mesh.exe\")",
+      "Bash(\"c:/cplusplus/ntop/libMeshb/build/utilities/Release/stl2mesh.exe\" \"c:/cplusplus/ntop/libMeshb/sample_meshes/test_cube.stl\")",
+      "Bash(\"c:/cplusplus/ntop/libMeshb/build/utilities/Release/mshinfo.exe\":*)",
+      "Bash(git push:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
