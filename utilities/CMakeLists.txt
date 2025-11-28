@@ -36,5 +36,9 @@ add_executable(mesh2bdf mesh2bdf.c)
 target_link_libraries (mesh2bdf Meshb.7 ${AIO_LIBRARIES})
 install (TARGETS mesh2bdf DESTINATION bin COMPONENT applications)
 
+add_executable(combinemesh combinemesh.c)
+target_link_libraries (combinemesh Meshb.7 ${AIO_LIBRARIES})
+install (TARGETS combinemesh DESTINATION bin COMPONENT applications)
+
 install (FILES libmeshb7_helpers.c DESTINATION helpers COMPONENT sources)
 install (FILES libmeshb7_helpers.h DESTINATION include COMPONENT headers)
